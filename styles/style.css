@@ -1,16 +1,14 @@
 .header {
-    /*height: 293px;*/
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-
 }
 
 .header__menu {
     font-size: 18px;
     padding-left: 50px;
-    
 }
+
 .header__links-list {
     display: flex;
     gap: 32px;
@@ -38,13 +36,16 @@
 }
 
 .header__address {
-    max-width: 240px;
     justify-self: end;
+    padding-right: 50px;
+}
+
+.address {
+    max-width: 240px;
     font-style: normal;
     font-size: 18px;
     line-height: 135%;
     text-underline-offset: 4px;
-    margin-right: 50px;
 }
 
 .cover {
@@ -139,10 +140,6 @@
 }
 
 .lots__heading {
-    font-weight: 700;
-    font-size: 40px;
-    text-transform: uppercase;
-    color: #000;
     margin-left: 40px;
     margin-bottom: 27px;
 }
@@ -227,8 +224,73 @@
 }
 
 .about {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    grid-template-rows: min-content 1fr;
+    justify-items: center;
+    column-gap: 25px;
+    margin-top: 120px;
+    padding-top: 35px;
+}
 
+.about__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.about__logo-image {
+    width: 148px;
+  }
+
+.about__title {
+    justify-self: start;
+    align-self: center;
+    margin-top: 4px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 20px;
+    line-height: 120%;
+    row-gap: 24px;
+    margin-top: 7px;
+    padding-right: 5px;
 }
 
 .footer {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    /*justify-items: start;
+    align-items: start;*/
+    margin-top: 180px;
+    padding: 0 50px;
+
+}
+
+.footer__menu {
+}
+
+.footer__menu-list {
+    text-align:center;
+    list-style-type: none;
+}
+
+.footer__menu-list-item {
+
+}
+
+.footer__menu-link_active {
+    
+}
+
+.footer__social-list {
+
 }
